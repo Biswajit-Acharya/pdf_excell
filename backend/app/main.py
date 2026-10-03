@@ -14,10 +14,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-from app.routes import v2_documents
-
 app.include_router(conversion.router, prefix="/api", tags=["conversion"])
-app.include_router(v2_documents.router, prefix="/api", tags=["v2_documents"])
 @app.get("/")
 def read_root():
     return {"message": "PDF to Excel API is running"}
