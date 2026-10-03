@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8002/api';
+const API_BASE_URL = 'https://pdf-excell.onrender.com/api';
 
 export const convertPdf = async (file, conversionMode, expectedFieldsCount, expectedFieldsJson, password) => {
     const formData = new FormData();
