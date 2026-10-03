@@ -9,3 +9,5 @@ pydantic
 pytesseract
 Pillow
 opencv-python
+python-dotenv
+google-generativeai
